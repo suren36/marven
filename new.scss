@@ -1,0 +1,19 @@
+ul a {
+  //   border: 2px solid black;
+  color: red !important;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 2px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: red;
+    transition: all 1s ease;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+ul a {
+  color: red !important;
+  position: relative;
+}
+
+ul a::after {
+  position: absolute;
+  content: "";
+  bottom: 2px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: red;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+ul a:hover::after {
+  width: 100%;
+}
+/*# sourceMappingURL=new.css.map */
