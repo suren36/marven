@@ -10,7 +10,7 @@ ul a {
     left: 0;
     height: 2px;
     width: 0%;
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     transition: all 1s ease;
   }
   &:hover::after {

@@ -1,11 +1,21 @@
-.bg {
-  background-color: #007bff70;
+* {
+  margin: 0px;
+  padding: 0px;
+}
+img {
+  width: 100%;
+}
+.bg .container-fluid {
+  background: yellowgreen;
 }
 
 .container-fluid .navbar-brand {
   padding: 0 0 0 10rem;
 }
-
+.loogo {
+  height: 56px;
+  width: 154px;
+}
 .a {
   margin-left: auto;
   padding: 0 4rem 0 0;
@@ -25,7 +35,7 @@ ul a::after {
   left: 0;
   height: 2px;
   width: 0%;
-  background-color: red;
+  background-color: rgba(24, 58, 30, 0.644);
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
@@ -101,9 +111,147 @@ ul a:hover::after {
 }
 
 .contents:hover .left {
-  background-color: red;
+  background-color: #b2bec3;
 }
 
 .pad {
   padding: 0;
+}
+
+.bg-wrapper-common:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+.card-section {
+  padding-top: 100px;
+}
+.head-container .h1-container h1 {
+  text-align: center;
+}
+.card-section .head-container .image-container {
+  max-width: 333px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0px;
+}
+.card-section .card-container .box-container {
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+  height: 385px;
+}
+.card-section .card-container .box-container:hover .text-container {
+  top: 0px;
+  background-color: #e9897e;
+}
+.card-section .card-container .box-container .image-container {
+  position: absolute;
+  top: 0px;
+  transition: top 2s ease;
+}
+.card-section .card-container .box-container:hover .image-container {
+  position: absolute;
+  top: -100%;
+  transition: top 2s ease;
+}
+
+.card-section {
+  background-color: whitesmoke;
+}
+.card-section .card-container .box-container:hover .image-container {
+  top: -100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+}
+.card-section .card-container .box-container .text-container {
+  padding: 24px;
+  position: absolute;
+  top: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+
+  transition: top 2s ease;
+}
+.card-section .card-container .box-container .text-container h2 {
+  margin-bottom: 20px;
+}
+
+.row .col-md-6 p {
+  color: #1a1e35;
+}
+/* ---------------------------------------------------------------------------------------- */
+.carousel-inner {
+  height: 100vh;
+}
+.top {
+  padding: 2rem 0;
+}
+
+.top h1 {
+  text-align: center;
+}
+
+.img-wrapper {
+  width: 30%;
+  margin: 0 auto;
+}
+.row {
+  padding: 2px;
+}
+.about {
+  background-color: rgb(47, 101, 107);
+}
+.about .row .col-md-6 p {
+  padding-right: 24px;
+}
+.row .col-md-6 p {
+  text-align: justify;
+  color: white;
+  line-height: 1cm;
+  padding-top: 50px;
+}
+.newabout .newtop .row {
+  display: flex;
+}
+.newtop h1 {
+  text-align: center;
+}
+.forcard .card {
+  background-color: #0e6b7e;
+}
+.forcard .card-img-top {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+.forcard {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.forcard .card-body {
+  background-color: #4b9933;
+}
+.del-container {
+  margin-top: 36px;
+  background-color: #f8f9ff;
+}
+.del-container .col-md-6 {
+  margin-top: 6px;
+}
+.abt-container-fluid {
+  background: linear-gradient(45deg, black, transparent);
+}
+.abt-container-fluid .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forcard .a1 {
+  margin: 1rem;
+}
+
+.black {
+  color: black;
 }
